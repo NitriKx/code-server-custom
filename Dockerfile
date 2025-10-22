@@ -1,11 +1,7 @@
 FROM linuxserver/code-server:4.105.1
 
 # Set environment variables
-ENV DEBIAN_FRONTEND=noninteractive
 ENV NODE_MAJOR=24
-
-# Switch to root to install packages
-USER root
 
 # Install all apt packages in a single layer
 RUN apt-get update && apt-get install -y \
@@ -51,13 +47,3 @@ RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.
 RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
     chmod +x kubectl && \
     mv kubectl /usr/local/bin/kubectl
-
-# Switch back to abc user (linuxserver default user)
-USER abc
-
-# Set working directory
-WORKDIR /config/workspace
-
-# Expose code-server port (default)
-EXPOSE 8443
-
