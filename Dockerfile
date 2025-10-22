@@ -26,7 +26,7 @@ RUN mkdir -p /etc/apt/keyrings && \
     rm -rf /var/lib/apt/lists/*
 
 # Install gemini-cli globally via npm
-RUN npm install -g @google/generative-ai-cli
+RUN npm install -g @google/gemini-cli
 
 # Install zsh
 RUN apt-get update && \
