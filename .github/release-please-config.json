@@ -2,7 +2,6 @@
   "packages": {
     ".": {
       "release-type": "simple",
-      "package-name": "code-server-custom",
       "changelog-sections": [
         {"type": "feat", "section": "Features"},
         {"type": "fix", "section": "Bug Fixes"},
