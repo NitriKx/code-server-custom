@@ -18,6 +18,7 @@ This image comes pre-configured with:
 - **Zsh** - Modern shell with powerline fonts
 
 ### AI & Development Tools
+- **Claude CLI** (`claudecli`) - Anthropic's Claude AI command-line interface
 - **Gemini CLI** (`@google/generative-ai-cli`) - Google's Generative AI CLI tool
 - **uv** - Fast Python package installer and resolver
 
@@ -125,6 +126,14 @@ kubectl get pods
 ### Using AI Tools
 
 ```bash
+# Claude CLI
+# First, configure your API key
+export ANTHROPIC_API_KEY="your-api-key-here"
+# Or use: claude config set api_key your-api-key-here
+
+claude --help
+claude "Explain what this code does"
+
 # Google Gemini CLI
 gemini --help
 ```
