@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.2.0](https://github.com/NitriKx/code-server-custom/compare/code-server-custom-v0.1.0...code-server-custom-v0.2.0) (2025-10-22)
+
+
+### Features
+
+* release ([42a4ee2](https://github.com/NitriKx/code-server-custom/commit/42a4ee25337fa853aa1c3fe5d92b9ca36af88d70))
+* release ([8c2cac7](https://github.com/NitriKx/code-server-custom/commit/8c2cac7e6310402a568220b801e51512a0b72005))
+
+
+### Bug Fixes
+
+* fix the GCP CLI installation ([b62b55c](https://github.com/NitriKx/code-server-custom/commit/b62b55c330d81f44b0edc30bfd4ab08d25240dfc))
+
+
+### Continuous Integration
+
+* fix APT ([db3a688](https://github.com/NitriKx/code-server-custom/commit/db3a688216f60677b46ac7fa33108f1756dfa8c7))
+
 ## [0.1.2](https://github.com/NitriKx/code-server-custom/compare/code-server-custom-v0.1.1...code-server-custom-v0.1.2) (2025-10-22)
 
 
