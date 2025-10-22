@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/NitriKx/code-server-custom/compare/code-server-custom-v0.2.0...code-server-custom-v0.2.1) (2025-10-22)
+
+
+### Continuous Integration
+
+* fix the release ([28dc295](https://github.com/NitriKx/code-server-custom/commit/28dc29519295fb5fc4d7d49e23119903ea616857))
+
 ## [0.2.0](https://github.com/NitriKx/code-server-custom/compare/code-server-custom-v0.1.0...code-server-custom-v0.2.0) (2025-10-22)
 
 
