@@ -70,8 +70,9 @@ RUN CILIUM_CLI_VERSION=$(curl -s https://raw.githubusercontent.com/cilium/cilium
     CLI_ARCH=amd64 && \
     curl -L --fail --remote-name-all https://github.com/cilium/cilium-cli/releases/download/${CILIUM_CLI_VERSION}/cilium-linux-${CLI_ARCH}.tar.gz{,.sha256sum} && \
     sha256sum --check cilium-linux-${CLI_ARCH}.tar.gz.sha256sum && \
-    tar xzvfC cilium-linux-${CLI_ARCH}.tar.gz /usr/local/bin && \
-    rm cilium-linux-${CLI_ARCH}.tar.gz{,.sha256sum}
+    tar xzf cilium-linux-${CLI_ARCH}.tar.gz && \
+    mv cilium /usr/local/bin/cilium && \
+    rm cilium-linux-${CLI_ARCH}.tar.gz cilium-linux-${CLI_ARCH}.tar.gz.sha256sum
 
 # Install Task CLI
 RUN sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
