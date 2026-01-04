@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-venv \
     unzip \
+    ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Node.js 24 and npm
@@ -25,6 +26,7 @@ RUN mkdir -p /etc/apt/keyrings && \
     echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_${NODE_MAJOR}.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list && \
     apt-get update && \
     apt-get install -y nodejs && \
+    npm config set prefix '~/.npm-global' && \
     rm -rf /var/lib/apt/lists/*
 
 # Install uv
@@ -47,3 +49,30 @@ RUN echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.
 RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
     chmod +x kubectl && \
     mv kubectl /usr/local/bin/kubectl
+
+# Install Go 1.25
+RUN curl -LO "https://go.dev/dl/go1.25.0.linux-amd64.tar.gz" && \
+    rm -rf /usr/local/go && \
+    tar -C /usr/local -xzf go1.25.5.linux-amd64.tar.gz && \
+    rm go1.25.0.linux-amd64.tar.gz
+ENV PATH="/usr/local/go/bin:${PATH}"
+
+# Install yt-dlp
+RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && \
+    chmod +x /usr/local/bin/yt-dlp
+
+# Install Playwright and its browser dependencies
+RUN npm install -g playwright && \
+    npx playwright install --with-deps chromium
+
+# Install Cilium CLI
+RUN CILIUM_CLI_VERSION=$(curl -s https://raw.githubusercontent.com/cilium/cilium-cli/main/stable.txt) && \
+    CLI_ARCH=amd64 && \
+    curl -L --fail --remote-name-all https://github.com/cilium/cilium-cli/releases/download/${CILIUM_CLI_VERSION}/cilium-linux-${CLI_ARCH}.tar.gz{,.sha256sum} && \
+    sha256sum --check cilium-linux-${CLI_ARCH}.tar.gz.sha256sum && \
+    tar xzvfC cilium-linux-${CLI_ARCH}.tar.gz /usr/local/bin && \
+    rm cilium-linux-${CLI_ARCH}.tar.gz{,.sha256sum}
+
+# Install Task CLI
+RUN sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
+
