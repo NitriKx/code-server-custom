@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/NitriKx/code-server-custom/compare/v0.3.0...v0.3.1) (2026-01-04)
+
+
+### Bug Fixes
+
+* fix the dockerimage not chanigng user ([e87c486](https://github.com/NitriKx/code-server-custom/commit/e87c48616adfbbc0bfb6379e7a24ff9862fd6f4b))
+
 ## [0.3.0](https://github.com/NitriKx/code-server-custom/compare/v0.2.1...v0.3.0) (2025-10-22)
 
 
