@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.4.0](https://github.com/NitriKx/code-server-custom/compare/v0.3.1...v0.4.0) (2026-01-04)
+
+
+### Features
+
+* Add Golang 1.25, Playwright (Chromium), yt-dlp, Cilium CLI, and Task CLI to Docker image ([e9b1109](https://github.com/NitriKx/code-server-custom/commit/e9b110954571cec6a44858097ad58f1dfd2d046a))
+
+
+### Miscellaneous Chores
+
+* **deps:** update docker/build-push-action action to v6 ([dfcdbe5](https://github.com/NitriKx/code-server-custom/commit/dfcdbe5708552209235c2eb0e9811fd2876b9bad))
+* **deps:** update docker/build-push-action action to v6 ([fb5d471](https://github.com/NitriKx/code-server-custom/commit/fb5d471ebb9b2ff7e04f92e3a4142d3e8f935f61))
+
 ## [0.3.1](https://github.com/NitriKx/code-server-custom/compare/v0.3.0...v0.3.1) (2025-10-22)
 
 
