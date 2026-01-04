@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/NitriKx/code-server-custom/compare/v0.4.0...v0.4.1) (2026-01-04)
+
+
+### Bug Fixes
+
+* fix the image building ([5c4da17](https://github.com/NitriKx/code-server-custom/commit/5c4da17aca962236068930d1eafc1fa3125eb181))
+
 ## [0.4.0](https://github.com/NitriKx/code-server-custom/compare/v0.3.1...v0.4.0) (2026-01-04)
 
 
