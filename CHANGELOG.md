@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/NitriKx/code-server-custom/compare/v0.4.1...v0.5.0) (2026-01-05)
+
+
+### Features
+
+* add helm and gh cli ([d96aa33](https://github.com/NitriKx/code-server-custom/commit/d96aa336855fafaec9ac7916b164fca1715172e2))
+
 ## [0.4.1](https://github.com/NitriKx/code-server-custom/compare/v0.4.0...v0.4.1) (2026-01-04)
 
 
