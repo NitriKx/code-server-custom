@@ -1,4 +1,4 @@
-FROM linuxserver/code-server:4.105.1
+FROM linuxserver/code-server:4.109.2
 
 # Set environment variables
 ENV NODE_MAJOR=24
