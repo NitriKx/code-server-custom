@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.5.0](https://github.com/NitriKx/code-server-custom/compare/v0.4.1...v0.5.0) (2026-07-08)
+
+
+### Features
+
+* add helm and gh cli ([d96aa33](https://github.com/NitriKx/code-server-custom/commit/d96aa336855fafaec9ac7916b164fca1715172e2))
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/attest-build-provenance action to v4 ([a5cb584](https://github.com/NitriKx/code-server-custom/commit/a5cb5840e0f9e9e26d7981757236849c5e61dd2a))
+* **deps:** update actions/attest-build-provenance action to v4 ([277ff16](https://github.com/NitriKx/code-server-custom/commit/277ff1654745154822f2b0b3d5500c8fd0aa2642))
+* **deps:** update actions/checkout action to v7 ([45947b2](https://github.com/NitriKx/code-server-custom/commit/45947b296413ab7c0611d38c0cec5dea3220c991))
+* **deps:** update actions/checkout action to v7 ([f4a048b](https://github.com/NitriKx/code-server-custom/commit/f4a048bc9915a2e145a96f08e5df77142d92e559))
+* **deps:** update linuxserver/code-server docker tag to v4.127.0 ([ede610a](https://github.com/NitriKx/code-server-custom/commit/ede610a0e9b0bf09caf2899763184925c5d44a53))
+* **deps:** update linuxserver/code-server docker tag to v4.127.0 ([224e730](https://github.com/NitriKx/code-server-custom/commit/224e730214ab049ebebe2757dad11ddb81ef4017))
+
 ## [0.4.1](https://github.com/NitriKx/code-server-custom/compare/v0.4.0...v0.4.1) (2026-01-04)
 
 
